@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>EDO CHAT!</title>
+    <link rel="stylesheet" href="../../node_modules/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+      <div class="row valign">
+        <div class="col s12 col l12 col m12">
+          <div class="col s3 col l2 col m3 blueColor fix-left">
+            <div class="col s12">
+              <p class="bold">ROOMS</p>
+            </div>
+            <hr>
+            <div class="col s12 col l12 col m12">
+              <i class="material-icons textColor">account_balance</i>
+              <label class="textColor">Room Default</label>
+              <div id="rooms"></div>
+            </div>
+          </div>
+          <div class="col s7 col l8 col m6 fix-chat">
+            <div class="col l12 col s12 blueColor">
+              <p class="bold">CHAT</p>
+              <hr>
+            </div>
+            <ul id="chat"></ul>
+          </div>
+          <div class="col s2 col l2 col m3 blueColor fix-right">
+            <div class="col s12">
+              <p class="bold">USERS</p>
+              <hr>
+              <div id="users"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row valign no-margin">
+        <div class="row center">
+          <div class="teal lighten-5">
+            <form action="">
+              <div class="input-field col s10">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="msj" class="materialize-textarea validate nopadding" required="" aria-required="true"></textarea>
+              </div>
+              <div class="row center">
+                <a class="waves-effect waves-light btn right bottonColor" id="send">Send</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  </body>
+  <script type="text/javascript" src="../../node_modules/hammerjs/hammer.min.js"></script>
+  <script type="text/javascript" src="../../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script>
+    require("../scripts/main.js");
+    require("../scripts/chat_controller.js");
+  </script>
+</html>

@@ -1,0 +1,20 @@
+{
+    "users": [
+        {
+            "key": "cba",
+            "name": "Sebas Duque"
+        },
+        {
+            "key": "321",
+            "name": "Manuel Sabogal"
+        },
+        {
+            "key": "1ab",
+            "name": "Caro Gomez"
+        },
+        {
+            "key": "dist",
+            "name": "Otros Usuarios"
+        }
+    ]
+}

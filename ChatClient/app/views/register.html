@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>EDO CHAT!</title>
+    <link rel="stylesheet" href="../../node_modules/materialize-css/dist/css/materialize.min.css" >
+    <link rel="stylesheet" href="../css/style.css" >
+  </head>
+  <body>
+    <div class="valign-wrapper background-Center">
+      <div class="row valign">
+        <h1 class="center-align">EdoChat!</h1>
+        <form class=" col s12" id="register">
+          <div class="row">
+            <div class="input-field">
+              <i class="material-icons prefix">perm_identity</i>
+              <input id="name" type="text" class="validate" required="" aria-required="true">
+              <label for="name">Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field">
+              <i class="material-icons prefix">perm_identity</i>
+              <input id="last_name" type="text" class="validate" required="" aria-required="true">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="username" type="text" class="validate" required="" aria-required="true">
+              <label for="username">Username</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field">
+              <i class="material-icons prefix">lock</i>
+              <input id="password" type="password" class="validate" required="" aria-required="true">
+              <label for="password">Password</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field">
+              <i class="material-icons prefix">label_outline</i>
+              <input id="age" type="number"  min="10" max="99" class="validate" required="" aria-required="true">
+              <label for="age">Age</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field">
+              <i class="material-icons prefix">wc</i>
+              <label>Gender</label>
+              <div id="gender">
+                <br>
+                <p>
+                  <input name="gender" type="radio" id="male" value="m"/>
+                  <label for="male">Male</label>
+                </p>
+                <p>
+                  <input name="gender" type="radio" id="female" value="f"/>
+                  <label for="female">Female</label>
+                </p>
+                <br>
+              </div>
+            </div>
+          </div>
+          <div class="center-align">
+            <a class="waves-effect waves-light btn bottonColor" id="back">VOLVER</a>
+            <button type="submit" class="waves-effect waves-light btn bottonColor">Registrarse</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="../../node_modules/hammerjs/hammer.min.js"></script>
+  <script type="text/javascript" src="../../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script>
+    require("../scripts/register_controller.js");
+  </script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>EDO CHAT!</title>
+    <link rel="stylesheet" href="../../node_modules/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <div class="valign-wrapper background-Center">
+      <div class="row valign">
+        <h1>EdoChat!</h1>
+        <form class=" col s12" id="login">
+          <div class="row">
+            <div class="input-field">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="user" type="text" class="validate" required="" aria-required="true">
+              <label for="user">user</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field">
+              <i class="material-icons prefix">lock</i>
+              <input id="password" type="password" class="validate" required="" aria-required="true">
+              <label for="password">password</label>
+            </div>
+          </div>
+          <button class="waves-effect waves-light btn bottonColor" type="submit">Login</button>
+          <a class="waves-effect waves-light btn bottonColor" id="register">Registrarse</a>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="../../node_modules/hammerjs/hammer.min.js"></script>
+  <script type="text/javascript" src="../../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script>
+    require("../scripts/login_controller.js")
+  </script>
+</html>
