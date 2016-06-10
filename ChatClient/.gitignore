@@ -1,0 +1,16 @@
+# Ignore npm folders and log files
+typings/
+node_modules/
+npm-debug.log
+
+# Ignore deploy folders
+build/
+
+# Ignore all the TypeScript compiled files
+app/scripts/**/*.js
+app/*.js
+
+# Ignore folder tmp
+tmp/
+tmp2/
+

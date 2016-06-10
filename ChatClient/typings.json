@@ -1,0 +1,11 @@
+{
+  "globalDependencies": {
+    "bson": "registry:dt/bson#0.4.21+20160317120654",
+    "electron": "registry:env/electron#0.37.6+20160416165306",
+    "jquery": "registry:dt/jquery#1.10.0+20160417213236",
+    "node": "registry:dt/node#6.0.0+20160602155235",
+    "react": "registry:dt/react#0.14.0+20160602151522",
+    "react-dom": "registry:dt/react-dom#0.14.0+20160412154040",
+    "rimraf": "registry:dt/rimraf#0.0.0+20160317120654"
+  }
+}

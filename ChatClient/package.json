@@ -1,0 +1,33 @@
+{
+  "name": "edochat",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "rm -rf tmp & mkdir tmp",
+    "start": " npm run build && gulp start",
+    "install": "rm -rf typings && typings install",
+    "debug": "gulp debug",
+    "watch": "npm run build && gulp watch",
+    "compile": "gulp compile"
+  },
+  "dependencies": {
+    "bson": "^0.4.23",
+    "hammerjs": "^2.0.8",
+    "ipc": "0.0.1",
+    "jquery": "^2.2.4",
+    "materialize-css": "^0.97.6",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "react-materialize": "^0.14.3",
+    "rimraf": "^2.5.2"
+  },
+  "devDependencies": {
+    "electron-prebuilt": "^0.37.8",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-run-electron": "^1.2.2",
+    "gulp-typescript": "^2.13.3",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.0"
+  }
+}
